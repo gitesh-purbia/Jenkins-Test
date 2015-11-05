@@ -1,0 +1,21 @@
+{
+  "name": "Jenkins-Test",
+  "homepage": "https://github.com/gitesh-purbia/Jenkins-Test",
+  "authors": [
+    "Gitesh <gitesh.purbiya22@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
