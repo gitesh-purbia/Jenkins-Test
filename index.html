@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Digital Video Creator</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/video_course/custom.css">
+	<link rel="stylesheet" type="text/css" href="/css/video_course/progressBar.css">
+	<link rel="stylesheet" type="text/css" href="/css/video_course/videoCustom.css">
+	<link rel="stylesheet" type="text/css" href="/css/custom.css">
+	<style>
+		.empty_container { padding: 10px;border: 2px dashed;height: 500px; }
+		.empty_container::after { content: "Insert Widget Here"; }
+	</style>
+</head>
+
+<body>
+	
+	<div ng-include="'views/partials/header.html'"></div>
+	
+	<section class="container e-gen">
+		<div>
+			<a ui-sref="video_course"><button class="btn btn-primary">Video Course</button></a>
+		</div>
+		<div ui-view></div>
+	</section>
+
+	<section id="Digi-Rigth-Menu-Icon" class="Digi-Rigth-Menu-Icon">
+		<div class="drmi">Project</div>
+		<div ng-include="'views/sidebar/project.html'">
+		</div>
+	</section>
+	
+	<section id="Digi-Rigth-Menu-Icon2" class="Digi-Rigth-Menu-Icon2">
+		<div class="drmi2">Resources</div>
+		<div ng-include="'views/sidebar/resources.html'">
+	</section>
+	
+	<section id="Digi-Rigth-Menu-Icon3" class="Digi-Rigth-Menu-Icon3">
+		<div class="drmi3">Project Resources</div>
+		<div ng-include="'views/sidebar/project_resources.html'">
+	</section>
+
+</body>
+
+<script src="lib/jquery-2.1.4.min/index.js"></script>
+<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/custom.js"></script>
+
+<script src="/js/main.js"></script>
+<script src="/lib/angular-dragdrop.js"></script>
+<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+</html>
