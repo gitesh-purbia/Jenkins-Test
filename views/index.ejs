@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8" />
 	<title><% title %></title>
+	<script src="lib/angular/angular.min.js" type="text/javascript"></script>
+	<script src="app/app.js" type="text/javascript"></script>
 </head>
-<body>
-	<h1>Hello Jenkins and Heroku </h1>
-	<h2>Title: <%=title%></h2>
+<body ng-controller="MyCtrl as ctrl">
+	<h1 class="message">Hello {{ctrl.name}}</h1>
+	<input type="text" class="name-textbox" ng-model="ctrl.name">
 </body>
 </html>
