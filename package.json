@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "echo server started"
+    "start": "echo server started"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/gitesh-purbia/Jenkins-Test/issues"
   },
-  "homepage": "https://github.com/gitesh-purbia/Jenkins-Test#readme"
+  "homepage": "https://github.com/gitesh-purbia/Jenkins-Test#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {}
 }
