@@ -2,10 +2,10 @@ var assert = require('assert');
 
 describe('thats a sample test', function(){
 	it('should say Hello world', function(){
-		assert.equal('Hello world', test());
+		assert.equal('Hello world', testmocha());
 	});
 });
 
-var test = function(){
+var testmocha = function(){
 	return "Hello world";
 };

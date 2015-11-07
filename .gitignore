@@ -1,3 +1,5 @@
 public/lib
 node_modules
 npm-debug.log
+test-reports
+.vscode
