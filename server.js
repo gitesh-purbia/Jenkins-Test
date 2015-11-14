@@ -1,7 +1,7 @@
 var express = require('express');
+var app = express();
 var path = require('path');
 var cool = require('cool-ascii-faces');
-var app = express();
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -14,8 +14,8 @@ app.get('/', function (req, res) {
    res.render('index', { title: 'Express.js Todo App' });
 });
 
-app.get('/cool', function(request, response) {
-  response.send(cool());
+app.get('/cool', function(req, res) {
+  res.send(cool());
 });
 
 app.listen(app.get('port'), function() {
